@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 static def buildTime() {
-    return new Date().format("yyyyMMdd");
+    return new Date().format("yyyy-MM-dd");
 }
 
 android {

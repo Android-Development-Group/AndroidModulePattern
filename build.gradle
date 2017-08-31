@@ -31,20 +31,20 @@ task clean(type: Delete) {
 }
 
 // Define versions in a single place
-//时间：2017.2.13；每次修改版本号都要添加修改时间
+//时间：2017.08.31；每次修改版本号都要添加修改时间
 ext {
     // Sdk and tools
     //localBuildToolsVersion是gradle.properties中的数据
     buildToolsVersion = localBuildToolsVersion
-    compileSdkVersion = 25
+    compileSdkVersion = 26
     minSdkVersion = 16
-    targetSdkVersion = 25
+    targetSdkVersion = 26
     versionCode = 1
     versionName = "1.0"
     javaVersion = JavaVersion.VERSION_1_8
 
     // App dependencies version
-    supportLibraryVersion = "25.3.1"
+    supportLibraryVersion = "26.+"
     retrofitVersion = "2.1.0"
     glideVersion = "3.7.0"
     loggerVersion = "1.15"
