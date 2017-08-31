@@ -24,7 +24,7 @@ import org.acra.sender.ReportSenderException;
  * @name MyApplication
  */
 @ReportsCrashes(
-        mailTo = "guiying705@Gmail.com",
+        mailTo = "jusenr@163.com",
         mode = ReportingInteractionMode.DIALOG,
         customReportContent = {
                 ReportField.APP_VERSION_NAME,

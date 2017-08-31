@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.guiying.common.base.BaseActivity;
@@ -22,6 +23,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private long exitTime = 0;
     protected Button newsButton;
     protected Button girlsButton;
+    protected Button crashButton;
+    protected TextView tvCrash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         newsButton.setOnClickListener(MainActivity.this);
         girlsButton = (Button) findViewById(R.id.girls_button);
         girlsButton.setOnClickListener(MainActivity.this);
+        crashButton = (Button) findViewById(R.id.crash_button);
+        crashButton.setOnClickListener(MainActivity.this);
+        tvCrash = (TextView) findViewById(R.id.tv_crash);
     }
 
     @Override
@@ -41,6 +47,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         } else if (view.getId() == R.id.girls_button) {
             //跳转到GirlsActivity
             ARouter.getInstance().build("/girls/list").navigation();
+        } else if (view.getId() == R.id.crash_button) {
+            tvCrash.setText(0000);
         }
     }
 
